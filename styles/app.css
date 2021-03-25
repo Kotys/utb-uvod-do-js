@@ -16,6 +16,10 @@
 	-webkit-transform: rotateX(180deg);
 }
 
+.card.card-matched {
+	border-color: rgb(8, 194, 8);
+}
+
 .card .card-front,
 .card .card-back {
 	position: absolute;
@@ -47,4 +51,10 @@
 
 .card .card-back i.fa {
 	font-size: 72px;
+}
+
+button.start-btn {
+  font-weight: bold;
+  font-size: 32px;
+  padding: 15px 30px;
 }
