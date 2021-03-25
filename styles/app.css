@@ -1,0 +1,50 @@
+.card {
+  display: inline-block;
+	width: 200px;
+	height: 200px;
+	position: relative;
+  border: 2px solid rgb(200, 200, 200);
+  margin: 5px;
+  /* Animations */
+  transition: all 600ms;
+  -webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.card.card-revealed {
+	transform: rotateX(180deg);
+	-webkit-transform: rotateX(180deg);
+}
+
+.card .card-front,
+.card .card-back {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #FFF;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.card .card-front {
+	background: rgb(48, 48, 48) no-repeat url("https://raw.githubusercontent.com/Kotys/utb-pexeso/master/assets/b2a-logo-digital-innovation-light-2%402.png");
+	background-position: center center;
+	background-size: 65%;
+  cursor: pointer;
+}
+
+.card .card-back {
+	background: rgb(96, 96, 96);
+	color: #FFF;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Animations */
+  -webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.card .card-back i.fa {
+	font-size: 72px;
+}
